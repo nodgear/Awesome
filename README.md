@@ -50,7 +50,7 @@ Releases are going to be available when the suit comes to stable release. But yo
 
 ## Some Credits <3
 
-Jon Seppanen for WWING project - Most of where the original AHK script came from.
-Khanhas for Polybar project - Code utils and Snippets.
-Cariboudjan#6360 For DropTop Project - Droptop utils and project contribution <3
+* Jon Seppanen for WWING project - Most of where the original AHK script came from.
+* Khanhas for Polybar project - Code utils and Snippets.
+* Cariboudjan#6360 For DropTop Project - Droptop utils and project contribution <3
 
