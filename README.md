@@ -2,7 +2,7 @@
 
 Awesome Bar is the **spiritual successor** to WWING by [Jon Seppanen](https://github.com/jonseppanen).
 Awesome Bar aims to be a complete taskbar replacement for windows for anyone that ~~uses a Dock~~ Uses windows.
-Thanks to cariboudjan, we don't need to hide the move and hide the taskbar to reserve screenspace, Awesome is now capable of setting a workspace area and work in conjunction with the windows Taskbar.
+Thanks to cariboudjan, we don't need to move and hide the taskbar to reserve screenspace, Awesome is now capable of setting a workspace area and work in conjunction with the windows Taskbar.
 
 ![My desktop screenshot](https://i.imgur.com/DVz2fNa.png)
 ## Features
