@@ -133,16 +133,18 @@ CheckForDownloadsInProgress(){
 ;=======================================================================
 ;            Send a command to rainmeter
 ;=======================================================================
+
 SendRainmeterCommand(command) {
     if(Send_WM_COPYDATA(command, "ahk_class RainmeterMeterWindow") = 1)
     {
-        WinShow("ahk_class Shell_TrayWnd")
-        WinShow("ahk_class Start Button")
+        ; If rainmeter is open and listening
+        ; WinShow("ahk_class Shell_TrayWnd")
+        ; WinShow("ahk_class Start Button")
         ExitApp
     }
     else{
-        WinHide("ahk_class Shell_TrayWnd")
-        WinHide("ahk_class Start Button")
+        ; WinHide("ahk_class Shell_TrayWnd")
+        ; WinHide("ahk_class Start Button")
     }
 }
 
