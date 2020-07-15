@@ -2,7 +2,7 @@
 
 Awesome Bar is the **spiritual successor** to WWING by [Jon Seppanen](https://github.com/jonseppanen).
 Awesome Bar aims to be a complete taskbar replacement for windows for anyone that uses a Dock.
-
+![My desktop screenshot](https://i.imgur.com/DVz2fNa.png)
 ## Features
 #### Dynamic Theme
 Awesome will change text and icon colors to contrast with whatever is on the background. 
