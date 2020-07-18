@@ -1,58 +1,82 @@
-# Awesome Bar - A Rainmeter Topbar for ~~Dock Users~~ Windows!.
+# AWESOME 😎 - A Rainmeter Topbar for Windows!.
 
-Awesome Bar is the **spiritual successor** to WWING by [Jon Seppanen](https://github.com/jonseppanen).
-Awesome Bar aims to be a complete taskbar replacement for windows for anyone that ~~uses a Dock~~ Uses windows.
-Thanks to cariboudjan, we don't need to move and hide the taskbar to reserve screenspace, Awesome is now capable of setting a workspace area and work in conjunction with the windows Taskbar.
+Awesome is the **spiritual successor** to WWING by [Jon Seppanen](https://github.com/jonseppanen).
+It aims to be a taskbar replacement/companion for windows for anyone.
 
 ![My desktop screenshot](https://i.imgur.com/DVz2fNa.png)
-## Features
-#### Dynamic Theme
-Awesome will change text and icon colors to contrast with whatever is on the background. 
-~~Yes, including wallpaper engine when using the transparent mode~~
-#### Focus Mode
-**When a maximized window is detected:**
-The Background with be filled with the titlebar color (Think of it like the navbar on android)
-**When a Fullscreen windows is detected**:
-Awesome will hide itself untill the fullscreen window gets out of focus.
+
+## FEATURES
+
+#### Extreme customization
+
+* DesktopColors Mode - Will change bar colors to match your desktop color.
+* DefaultColors Mode - Set it to Dark or Light mode, and awesome will only use the colors you have defined for this option
+* Theming - Set sizes, Margins, Paddings, Colors and every aspect of the topbar with a simple config file.
+
+Theming tool will come soon...
+
+#### FocusMode
+
+###### With window maximized:
+
+* TitleBarBlend Option - Bar background will assume the same color as the maximized window titlebar color.
+* DefaultColors Option - Bar background will assume the colors defined by the user.
+
+With window NOT maximized:
+
+* DesktopColors Mode - Bar text and icons will assume the apropriate color theme (dark/light) based on the background colors.
+* DefaultColors Mode - Bar will assume only assume the colors define by the user.
+
+FocusMode can also be disabled, making the bar background never change.
+
+#### Out of your way.
+
+* Fixed Mode - Reserves a space on the top of your screen for the bar, hides when fullscreen.
+* AutoHide Mode - No space reserved, bar will hide itself after a couple of seconds, hover your cursor on the top of the screen to show it again.
+
 #### Media and Volume Control
-Supports **WebNowPlaying** plugin **to get Spotify and Web browser media status**, Media control will not stay on your way if you don't have a music player open, it will also not show skip/previous buttons while the music is not playing. Awesome also allows you to control your mediaplayer volume individualy.
-#### No need to move actions (Yes, just like WWING)
-You never need to move your mouse out of the icon to do any actions on Awesome.
-Hover Icons to view their modules.
-Click to toggle/run.
-Scroll to increase/decrease value.
-#### Clock, Weather and Calendar.
+
+Awesome supports WebNowPlaying and NowPlaying Plugins for rainmeter, making it capable of showing almost all modern websites and music players status.
+
+#### Less actions, more productivity.
+
+You never need to click on anything to get the information you need.
+Simply hover your cursor on icons to display their widget, click to toggle and scroll to increase/decrease, simple as that 🤗
+
+#### Optmized as possible.
+
 Everything is on the middle of your screen, hover the clock/date.
 
 #### A config for everything.
+
 ~~almost~~ Everything is customizable, from background tint, blur type to colors and sizes.
 
 #### User variables
-Awesome variables are stored on your userfolder, allowing you to update the skin without redoing your customizations
+
+Awesome variables can be backed up to your personal folder, making updates free from override problems.
 
 #### Download indicator
+
 Download icon will animate while a download is in progress, hover to check your download speed and Click to open the download folder.
 
 #### Desktop Management.
+
 See and toggle between your mutiple desktops using scroll gestures on the menu icon.
 Click the menu icon to show all tasks list and select one
 
-
 ### Pre-requisites
-Rainmeter 4.0 +
-Image Magick.
-A Dock or app launcher.
-A brain.
 
+Rainmeter 4.1 +
+Image Magick.
+~~A Dock or app launcher.~~
+A brain.
 
 ## Download
 
 Releases are going to be available when the suit comes to stable release. But you can always clone this repostitory and test/contribute to the project.
 
-
 ## Some Credits <3
 
-* Jon Seppanen for WWING project - Most of where the original AHK script came from.
-* Khanhas for Polybar project - Code utils and Snippets.
-* Cariboudjan#6360 For DropTop Project - Droptop utils and project contribution <3
-
+* Jon Seppanen for inc_lib - AHK Utils for rainmeter.
+* Khanhas for Polybar project - Image Magick for Rainmeter creation.
+* Cariboudjan#6360 For DropTop Project - Utils and snippets from DropTop <3
