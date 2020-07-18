@@ -5,9 +5,9 @@ oDisableDebug = 0
 oTheme = "default"
 oLanguage = english
 oUserDir = %USERPROFILE%\awesome\
-oBarFixed = 0
+oBarFixed = 1
 
-oBarAutoHide = 1
+oBarAutoHide = 0
 ; Delay between placing the cursor on the top area and showing the bar.
 oBarShowDelay = 0.3
 
