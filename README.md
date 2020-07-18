@@ -43,31 +43,30 @@ Awesome supports WebNowPlaying and NowPlaying Plugins for rainmeter, making it c
 You never need to click on anything to get the information you need.
 Simply hover your cursor on icons to display their widget, click to toggle and scroll to increase/decrease, simple as that 🤗
 
-#### Optmized as possible.
+#### Optimized as possible.
 
-Everything is on the middle of your screen, hover the clock/date.
+I took care of measuring skin CPU usage during the entire development, every part of the skin only updates when needed making it Gaming friendly (yes, i have a bad pc 😅)
 
-#### A config for everything.
-
-~~almost~~ Everything is customizable, from background tint, blur type to colors and sizes.
-
-#### User variables
+#### User variables, update without fear.
 
 Awesome variables can be backed up to your personal folder, making updates free from override problems.
 
-#### Download indicator
+#### Modules
 
-Download icon will animate while a download is in progress, hover to check your download speed and Click to open the download folder.
-
-#### Desktop Management.
-
-See and toggle between your mutiple desktops using scroll gestures on the menu icon.
-Click the menu icon to show all tasks list and select one
+* Volume - Controls system volume and output.
+* Brightness - You know what it does.
+* Weather
+* Download indicator - When a download is in progress the download indicator will be shown up, hovering shows your download speed.
+* Desktop Management - Scroll between your workspaces(virtual desktops) or just check them all :)
+* Clock - What would we do without one of these?
+* Media Player and control - When a compatible player is detected, the media module will be displayer, media controls are also displayed when a music/video is currently playing
+* Menu bar -  Quickly~~~~ change your current window.
 
 ### Pre-requisites
 
 Rainmeter 4.1 +
 Image Magick.
+WebNowPlaying plugin (Opera?, Firefox, Chrome, Edge ...) - Only needed if you want to control the browser media.
 ~~A Dock or app launcher.~~
 A brain.
 
@@ -80,3 +79,9 @@ Releases are going to be available when the suit comes to stable release. But yo
 * Jon Seppanen for inc_lib - AHK Utils for rainmeter.
 * Khanhas for Polybar project - Image Magick for Rainmeter creation.
 * Cariboudjan#6360 For DropTop Project - Utils and snippets from DropTop <3
+
+## BUGS:
+
+* FocusMode (Changing bar background when maximizing windows) doesn't work if the bar is set to autohide and the windows taskbar is also set to auto-hide
+
+Apparently, windows doesn't report a window as maximized (GDIP.dll) when theres no APPBar limiting the window, this can be fixed by using a dock that reserves space, or, using the fixed mode.
