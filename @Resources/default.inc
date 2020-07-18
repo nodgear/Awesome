@@ -5,8 +5,12 @@ oDisableDebug = 0
 oTheme = "default"
 oLanguage = english
 oUserDir = %USERPROFILE%\awesome\
-oBarFixed = 1
-oBarAutoHide = 0
+oBarFixed = 0
+
+oBarAutoHide = 1
+; Delay between placing the cursor on the top area and showing the bar.
+oBarShowDelay = 0.3
+
 oHideClock = 0
 oBarHeight = 32
 oBarOffset = 0
@@ -18,6 +22,10 @@ oDisableDesktopColors = 0
 oDisableTitlebarBlend = 0
 ; If set to 1, will disable the background change when maximizing a window
 oDisableFocusMode = 0
+; If all modes are set to 0, how the fuck we get color contrast?
+; Well, ask the user what he wants
+; Options: 1 = LightMode, 0 = DarkMode
+oDefaultColorMode = 0
 
 ; Media Player options: WebNowPlaying | NowPlaying
 ; WebNowPlayer doesn't need a oMediaPlayerName
