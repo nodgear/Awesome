@@ -1,8 +1,5 @@
 [Variables]
-; If all modes are set to 0, how the fuck we get color contrast?
-; Well, ask the user what he wants
-; Options: 1 = LightMode, 0 = DarkMode
-tDefaultColorMode = 0
+
 
 tBarTint = 0,0,0,0
 tBarOpacity = 0
