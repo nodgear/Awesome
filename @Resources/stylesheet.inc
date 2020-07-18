@@ -1,5 +1,13 @@
 [AlignLeft]
-X=R
+X          = R
+Y          = 
 
 [AlignRight]
-X=(-(#awvBarSpacing#))r
+X          = (-(#vBarSpacing#))r
+
+[Text]
+FontFace   = Montserrat
+FontWeight = 600
+AntiAlias  = 1
+FontSize   = 11
+

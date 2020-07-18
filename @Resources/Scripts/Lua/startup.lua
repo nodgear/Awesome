@@ -6,7 +6,7 @@ function Initialize()
     -- Definethe user variables from the previous folder
     userVarsPath = SKIN:GetVariable("@")  .. "overrides.inc"
 
-    -- SKIN:Bang("!SetVariable", "vUserDir", awesomeUserFolder)
+    -- SKIN:Bang("!SetVariable", "oUserDir", awesomeUserFolder)
 
 end
 

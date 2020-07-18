@@ -1,17 +1,26 @@
 [Variables]
 
 ; [[[ Global Settings ]]]
-vDisableDebug = 0
-vTheme = Default
-vLanguage = english
-vUserDir = %USERPROFILE%\awesome\
-vBarFixed = 1
-vBarAutoHide = 0
-vHideClock = 0
-vHideProcessName = 0
+oDisableDebug = 0
+oTheme = "default"
+oLanguage = english
+oUserDir = %USERPROFILE%\awesome\
+oBarFixed = 1
+oBarAutoHide = 0
+oHideClock = 0
+oBarHeight = 32
+oBarOffset = 0
+;  Should the window processname be shown on the Bar?
+oHideProcessName = 0
+; If set to 1, Awesome will not try to update colors based on your background ( using #vDesktopBG1# etc...)
+oDisableDesktopColors = 0
+; If set to 1, the bar background will not get the color from the maximized window titelbar
+oDisableTitlebarBlend = 0
+; If set to 1, will disable the background change when maximizing a window
+oDisableFocusMode = 0
 
 ; Media Player options: WebNowPlaying | NowPlaying
-; WebNowPlayer doesn't need a vMediaPlayerName
+; WebNowPlayer doesn't need a oMediaPlayerName
 ; NowPlaying Playaer Name Options: AIMP | CAD | MediaMonkey | Winamp | WMP | WLM | iTunes
 ;   AIMP |                   CAD                   | MediaMonkey | Winamp |        WMP         |      WLM       | iTunes 
 ;  ------|-----------------------------------------|-------------|--------|--------------------|----------------|-------- 
@@ -20,7 +29,5 @@ vHideProcessName = 0
 ;        | MusicBee                                |             |        |                    | OpenPandora    |        
 ;        |                                         |             |        |                    | Zune           |        
 
-vMediaPlayer = WebNowPlaying
-vMediaPlayerName = CAD
-
-; [[[ Global Theming ]]]
+oMediaPlayer = WebNowPlaying
+oMediaPlayerName = CAD
