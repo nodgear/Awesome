@@ -82,6 +82,6 @@ Releases are going to be available when the suit comes to stable release. But yo
 
 ## BUGS:
 
-* FocusMode (Changing bar background when maximizing windows) doesn't work if the bar is set to autohide and the windows taskbar is also set to auto-hide
+* ~~FocusMode (Changing bar background when maximizing windows) doesn't work if the bar is set to autohide and the windows taskbar is also set to auto-hideApparently, windows doesn't report a window as maximized (GDIP.dll) when theres no APPBar limiting the window, this can be fixed by using a dock that reserves space, or, using the fixed mode.~~
 
-Apparently, windows doesn't report a window as maximized (GDIP.dll) when theres no APPBar limiting the window, this can be fixed by using a dock that reserves space, or, using the fixed mode.
+Currently none, if you find one open an issue.

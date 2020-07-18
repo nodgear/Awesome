@@ -7,7 +7,8 @@ getIsOnMonitor(winID, nMonitor := "")
   
   WinGetPos(winX,winY,Width,Height,"ahk_id " winID)
 
-  if((Width - 16) <= monRight && (winX + 8) >= monLeft && (winY + 8) >= monTop && (Height + 16) <= monBottom)
+  ; && (winY + 8) >= monTop && (Height + 16) <= monBottom -- Detects if the window is sized with the appbar on top.
+  if((Width - 16) <= monRight && (winX + 8) >= monLeft )
   {
     return True
   }
@@ -299,13 +300,13 @@ showBackBar(targetWindow,instant := false)
     ; {
         
         iterations := 0
-        PixelColorHex := PixelGetColor(vMaximizedW/2,vMaximizedY*1.5)
+        PixelColorHex := PixelGetColor(vMaximizedW*0.7,vMaximizedY+8)
         startCount := A_TickCount
-        While (PixelGetColor(vMaximizedW/2,vMaximizedY*1.5) = PixelColorHex && ((A_TickCount - startCount) < 200))
+        While (PixelGetColor(vMaximizedW*0.7,vMaximizedY+8) = PixelColorHex && ((A_TickCount - startCount) < 200))
         {
             iterations++
         }
-        TitlebarColor := PixelGetColor(vMaximizedW/2,vMaximizedY*1.5)
+        TitlebarColor := PixelGetColor(vMaximizedW*0.7,vMaximizedY+8)
         state_titlebarColors[targetWindow] := TitlebarColor
     ; }
     ; else
@@ -317,7 +318,7 @@ showBackBar(targetWindow,instant := false)
     SendRainmeterCommand("[!SetVariable vBGColor `"" SplitRGBColor(TitlebarColor) "`" awesome\Modules\processor][!Update awesome\Modules\Processor]")
     SendRainmeterCommand("[!SetVariable vBGLuminance `"" RGB2L(TitlebarColor) "`" awesome\Modules\processor]")
     SendRainmeterCommand("[!SetVariable vMaximized 1 awesome\Modules\Processor]")
-    SendRainmeterCommand("[!SetVariable vTitlebarY `"" vMaximizedY "`" awesome\Modules\Processor][!Update awesome\Modules\Processor]")
+    SendRainmeterCommand("[!SetVariable vTitlebarY `"" vMaximizedY+4 "`" awesome\Modules\Processor][!Update awesome\Modules\Processor]")
     ; SendRainmeterCommand("[!SetOption Background SolidColor `"" SplitRGBColor(TitlebarColor) "`" awesome\Modules\background][!SetVariable awvBGColor `"" SplitRGBColor(TitlebarColor) "`" awesome\Modules\background][!Update awesome\Modules\background][!Redraw awesome\Modules\background][!Show" fadeString " awesome\Modules\background][!SetVariable vMaximized 1 awesome\Modules\background][!Delay 300][!Update awesome][!Redraw awesome]")
 }
 
