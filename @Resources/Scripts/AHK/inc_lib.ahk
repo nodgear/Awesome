@@ -315,17 +315,17 @@ showBackBar(targetWindow,instant := false)
     ;     TitlebarColor := state_titlebarColors[targetWindow]
     ; }
     ; SendRainmeterCommand("[!SetOption Background SolidColor `"" SplitRGBColor(TitlebarColor) "`" awesome\Modules\background]")
-    SendRainmeterCommand("[!SetVariable vBGColor `"" SplitRGBColor(TitlebarColor) "`" awesome\Modules\processor][!Update awesome\Modules\Processor]")
-    SendRainmeterCommand("[!SetVariable vBGLuminance `"" RGB2L(TitlebarColor) "`" awesome\Modules\processor]")
-    SendRainmeterCommand("[!SetVariable vMaximized 1 awesome\Modules\Processor]")
-    SendRainmeterCommand("[!SetVariable vTitlebarY `"" vMaximizedY+4 "`" awesome\Modules\Processor][!Update awesome\Modules\Processor]")
+    SendRainmeterCommand("[!SetVariable vBGColor `"" SplitRGBColor(TitlebarColor) "`" awesome\Modules\processor][!Update awesome\Modules\Processor][!UpdateMeasure ProcessBackground  awesome\Modules\processor][!UpdateMeasure ProcessForeground  awesome\Modules\processor]")
+    SendRainmeterCommand("[!SetVariable vBGLuminance `"" RGB2L(TitlebarColor) "`" awesome\Modules\processor][!UpdateMeasure ProcessBackground  awesome\Modules\processor][!UpdateMeasure ProcessForeground  awesome\Modules\processor]")
+    SendRainmeterCommand("[!SetVariable vMaximized 1 awesome\Modules\Processor][!UpdateMeasure ProcessBackground  awesome\Modules\processor][!UpdateMeasure ProcessForeground  awesome\Modules\processor]")
+    SendRainmeterCommand("[!SetVariable vTitlebarY `"" vMaximizedY+4 "`" awesome\Modules\Processor][!UpdateMeasure MeasureDebugMode awesome\Modules\Processor][!UpdateMeasure ProcessForeground  awesome\Modules\processor]")
     ; SendRainmeterCommand("[!SetOption Background SolidColor `"" SplitRGBColor(TitlebarColor) "`" awesome\Modules\background][!SetVariable awvBGColor `"" SplitRGBColor(TitlebarColor) "`" awesome\Modules\background][!Update awesome\Modules\background][!Redraw awesome\Modules\background][!Show" fadeString " awesome\Modules\background][!SetVariable vMaximized 1 awesome\Modules\background][!Delay 300][!Update awesome][!Redraw awesome]")
 }
 
 hideBackBar(instant := false)
 {
   fadeString := instant ? "" : "Fade"
-  SendRainmeterCommand("[!SetVariable vMaximized 0 awesome\Modules\Processor]")
+  SendRainmeterCommand("[!SetVariable vMaximized 0 awesome\Modules\Processor][!UpdateMeasure ProcessBackground  awesome\Modules\processor][!UpdateMeasure ProcessForeground  awesome\Modules\processor]")
   ; SendRainmeterCommand("[!SetVariable vMaximized 0 awesome\Modules\background][!Hide" fadeString " awesome\Modules\background][!Delay 300][!Update awesome][!Redraw awesome]")
 }
 
