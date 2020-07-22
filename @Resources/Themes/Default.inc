@@ -29,12 +29,14 @@ tHoverShape          = Rectangle 0, 0, #tHoverW#, #tHoverH#, 12, 12
 tHoverShape2         = 
 tHoverShape3         = 
 
-; Colors for when using DefaultColorMode or Focusmode with TitlebarBlend
-tBackgroundColor     = 0,0,0
+; Background for DEFAULTCOLORMODE with focusmode
+tBackgroundLightColor     = 255,255,255
+tBackgroundDarkColor      = 0,0,0
 
+; Background for when using (DefaultColorMode) or (Focusmode with TitlebarBlend)
 tLightModeTextColor  = 0,0,0,255
 tLightModeHoverColor = 255,255,255
 
 tDarkModeTextcolor   = 255,255,255,255
-tDarkModeHoverColor  = [ChamDark1]
+tDarkModeHoverColor  = 0,0,0,255
 
