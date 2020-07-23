@@ -14,7 +14,7 @@
   <img src="https://i.imgur.com/NcmJhQI.png">
 </p>
 
-# Setup
+# Download / Setup
 - Make sure you have the [requirements](#requirements)
  - [Download](github.com/nodgear/awesome/releases)  and run the RMSkin File. (Releases available from v1+)
 - Run the awesome Skin on Rainmeter if the installer doesn't start it for you.
