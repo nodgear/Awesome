@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "khanhas",
+      "name": "khanhas",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/26436809?v=4",
+      "profile": "https://github.com/khanhas",
+      "contributions": [
+        "plugin",
+        "tool"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Awesome",
+  "projectOwner": "nodgear",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
