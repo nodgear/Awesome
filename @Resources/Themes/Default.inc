@@ -6,7 +6,7 @@ tBarOpacity          = 0
 tBarStrokeWidth      = 0
 tBarStrokeColor      = 0,0,0
 tBarShouldBlur       = 1
-tBarBlurType         = Acrylic
+tBarBlurType         = Blur
 tBarShadow           = "None"
 tBarBorderRadius     = 0
 
@@ -16,6 +16,8 @@ tHidePowerButton     = 0
 tIconSize            = 16
 tIconMargin          = 16
 tBarPadding          = 16
+
+tIconPack            = tray
 
 ; First option defines the Y position of the hover background.
 ; Second option defines the shape of the hover background

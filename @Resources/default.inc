@@ -16,7 +16,7 @@ oBarOffset = 0
 oReservedSpace = 32
 
 ; If set to 1, Awesome will not try to update colors based on your background ( using #vDesktopBG1# etc...)
-oDisableDesktopColors = 0
+oDisableDesktopColors = 1
 ; If set to 1, the bar background will not get the color from the maximized window titelbar
 oDisableTitlebarBlend = 0
 ; If set to 1, will disable the background change when maximizing a window
