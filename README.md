@@ -92,7 +92,15 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
+<<<<<<< Updated upstream
     <td align="center"><a href="https://github.com/jonseppanen"><img src="https://avatars3.githubusercontent.com/u/10136068?v=4" width="100px;" alt=""/><br /><sub><b>Jon Seppanen</b></sub></a><br /><a href="#tool-jonseppanen" title="Tools">🔧</a></td>
+=======
+<<<<<<< HEAD
+    <td align="center"><a href="https://github.com/jonseppanen"><img src="https://avatars3.githubusercontent.com/u/10136068?v=4" width="100px;" alt=""/><br /><sub><b>Jon Seppanen</b></sub></a><br /><a href="#tool-jonseppanen" title="Tools">🔧</a></td>
+=======
+    <td align="center"><a href="https://github.com/khanhas"><img src="https://avatars2.githubusercontent.com/u/26436809?v=4" width="100px;" alt=""/><br /><sub><b>khanhas</b></sub></a><br /><a href="#plugin-khanhas" title="Plugin/utility libraries">🔌</a> <a href="#tool-khanhas" title="Tools">🔧</a></td>
+>>>>>>> add-khanhas
+>>>>>>> Stashed changes
   </tr>
 </table>
 

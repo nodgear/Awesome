@@ -6,11 +6,26 @@
   "commit": false,
   "contributors": [
     {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
       "login": "jonseppanen",
       "name": "Jon Seppanen",
       "avatar_url": "https://avatars3.githubusercontent.com/u/10136068?v=4",
       "profile": "https://github.com/jonseppanen",
       "contributions": [
+<<<<<<< Updated upstream
+=======
+=======
+      "login": "khanhas",
+      "name": "khanhas",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/26436809?v=4",
+      "profile": "https://github.com/khanhas",
+      "contributions": [
+        "plugin",
+>>>>>>> add-khanhas
+>>>>>>> Stashed changes
         "tool"
       ]
     }
