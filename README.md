@@ -1,87 +1,81 @@
-# AWESOME 😎 - A Rainmeter Topbar for Windows!.
+<p align="center">
+  <img src="https://i.imgur.com/8TqhcYX.png">
+</p>
 
-Awesome is the **spiritual successor** to WWING by [Jon Seppanen](https://github.com/jonseppanen).
-It aims to be a taskbar replacement/companion for windows for anyone.
+# Awesome
+> A highly customizable topbar for windows
 
-![My desktop screenshot](https://i.imgur.com/DVz2fNa.png)
+> Why only linux users can have the sweet?
 
-## FEATURES
+![Current version: 0.4](https://img.shields.io/badge/Version-0.4-yellow?style=for-the-badge) ![Current version: 0.4](https://img.shields.io/badge/Dependency-AutoHotkey-brightgreen?style=for-the-badge) ![Current version: 0.4](https://img.shields.io/badge/Dependency-ImageMagick-orange?style=for-the-badge) ![Built With: Rainmeter](https://img.shields.io/badge/Built%20With-Rainmeter-blue?style=for-the-badge)  <p align="center">
+  <img src="https://i.imgur.com/NcmJhQI.png">
+</p>
 
-#### Extreme customization
+# Setup
+- Make sure you have the [requirements](#requirements)
+ - [Download](github.com/nodgear/awesome/releases)  and run the RMSkin File. (Releases available from v1+)
+- Run the awesome Skin on Rainmeter if the installer doesn't start it for you.
+- Enjoy!
 
-* DesktopColors Mode - Will change bar colors to match your desktop color.
-* DefaultColors Mode - Set it to Dark or Light mode, and awesome will only use the colors you have defined for this option
-* Theming - Set sizes, Margins, Paddings, Colors and every aspect of the topbar with a simple config file.
+# Theming
+You can theme Awesome in two different ways:
 
-Theming tool will come soon...
+ - Using the visual settings (by loading the settings skin on rainmeter)
+   - Bar behavior and size
+   - Colors and Color modes ( DesktopColors, DefaultColors, TitlebarBlend )
+   - Focus mode, Blur and more.
+- Creating a new theme file on awesome/@Resources/themes
+  - Customize and create your own shapes, colors and fonts.
+  - Pick or add new Icon Themes.
+  - Change base colors and thresholds
+  - Create, enable, disable and change Module Orders
+  - Much more!
 
-#### FocusMode
+# Features
+- Real time weather
+	- Temperature and Forecast.
+ - Focusmode
+   - Fills the bar background to be less distractive
+	   - TitlebarBlend: Background gets the same color as the maximized window titlebar, Blending it with the bar.
+	   - DesktopColors: Assumes colors based on your dekstop wallpaper, automatically.
+	   - DefaultColors: Bar will always use the same color scheme define by the user.
+- Media control
+	- When a compatible player is running on your computer, the media button will be displayed on your topbar, allowing you to see the musicplayer module and play your music.
+	- When a music is playing, music controls  are also displayed, so you can do everything without having to stop. 
+	- You can also increase/descrease the mediaplayer volume without changing the system volume.
+- Mail Notification
+	- Get notified when a new email comes.
+	- Hover to preview your inbox. 
+- Network status
+	- Shows your current network health (if wifi/mobile)
+	- Network module also provides you with your local and external IP adresses.
+- Volume Control
+	- Check your volume lever or change your system volume.
+	- You can also quickly mute and unmute.
+- Brightness Control
+	- Change your monitor brightness without having to access any control panel.
+- Clock
+- Download in progress
+	- A download indicator is displayed when a download is detected.
+	- You can also check download speed.
+- App menu
+	- Quickly change between your open apps.
+	- Check your currently open apps, even without a taskbar.
+- Power module
+	- Shutdow
+	- Lock
+	- Sleep
+	- Restart
+	- Logoff
 
-###### With window maximized:
+# Future updates
+- Pushbullet API integration
+	- Send files, texts and links directly to your smartphone.
+- Calendar
+- Folder Browser
+# Requirements
 
-* TitleBarBlend Option - Bar background will assume the same color as the maximized window titlebar color.
-* DefaultColors Option - Bar background will assume the colors defined by the user.
+ - [Rainmeter 4.3+.](https://www.rainmeter.net/)
+ - [Image Magick.](https://imagemagick.org/script/index.php)
+ - [A brain.](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
-With window NOT maximized:
-
-* DesktopColors Mode - Bar text and icons will assume the apropriate color theme (dark/light) based on the background colors.
-* DefaultColors Mode - Bar will assume only assume the colors define by the user.
-
-FocusMode can also be disabled, making the bar background never change.
-
-#### Out of your way.
-
-* Fixed Mode - Reserves a space on the top of your screen for the bar, hides when fullscreen.
-* AutoHide Mode - No space reserved, bar will hide itself after a couple of seconds, hover your cursor on the top of the screen to show it again.
-
-#### Media and Volume Control
-
-Awesome supports WebNowPlaying and NowPlaying Plugins for rainmeter, making it capable of showing almost all modern websites and music players status.
-
-#### Less actions, more productivity.
-
-You never need to click on anything to get the information you need.
-Simply hover your cursor on icons to display their widget, click to toggle and scroll to increase/decrease, simple as that 🤗
-
-#### Optimized as possible.
-
-I took care of measuring skin CPU usage during the entire development, every part of the skin only updates when needed making it Gaming friendly (yes, i have a bad pc 😅)
-
-#### User variables, update without fear.
-
-Awesome variables can be backed up to your personal folder, making updates free from override problems.
-
-#### Modules
-
-* Volume - Controls system volume and output.
-* Brightness - You know what it does.
-* Weather
-* Download indicator - When a download is in progress the download indicator will be shown up, hovering shows your download speed.
-* Desktop Management - Scroll between your workspaces(virtual desktops) or just check them all :)
-* Clock - What would we do without one of these?
-* Media Player and control - When a compatible player is detected, the media module will be displayer, media controls are also displayed when a music/video is currently playing
-* Menu bar -  Quickly~~~~ change your current window.
-
-### Pre-requisites
-
-Rainmeter 4.1 +
-Image Magick.
-WebNowPlaying plugin (Opera?, Firefox, Chrome, Edge ...) - Only needed if you want to control the browser media.
-~~A Dock or app launcher.~~
-A brain.
-
-## Download
-
-Releases are going to be available when the suit comes to stable release. But you can always clone this repostitory and test/contribute to the project.
-
-## Some Credits <3
-
-* Jon Seppanen for inc_lib - AHK Utils for rainmeter.
-* Khanhas for Polybar project - Image Magick for Rainmeter creation.
-* Cariboudjan#6360 For DropTop Project - Utils and snippets from DropTop <3
-
-## BUGS:
-
-* ~~FocusMode (Changing bar background when maximizing windows) doesn't work if the bar is set to autohide and the windows taskbar is also set to auto-hideApparently, windows doesn't report a window as maximized (GDIP.dll) when theres no APPBar limiting the window, this can be fixed by using a dock that reserves space, or, using the fixed mode.~~
-
-Currently none, if you find one open an issue.
