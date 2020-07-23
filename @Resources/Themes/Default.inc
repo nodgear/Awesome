@@ -6,7 +6,7 @@ tBarOpacity          = 0
 tBarStrokeWidth      = 0
 tBarStrokeColor      = 0,0,0
 tBarShouldBlur       = 1
-tBarBlurType         = Blur
+tBarBlurType         = Acrylic
 tBarShadow           = "None"
 tBarBorderRadius     = 0
 
