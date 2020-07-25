@@ -24,10 +24,10 @@ OnMessage(16683, "OpenNotifications")
 
 
 SetTimerAndFire("CheckForDownloadsInProgress", 2000)
-SetTimerAndFire("daemonWindowMinMax", 100)
-SetTimer("startMenuCheck", 150)
+SetTimerAndFire("daemonWindowMinMax", 200)
+; SetTimer("startMenuCheck", 1000)
 
-startEventLoop(100)
+startEventLoop(200)
 
 startMenuCheck()
 {
