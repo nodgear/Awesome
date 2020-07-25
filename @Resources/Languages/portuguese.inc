@@ -1,11 +1,8 @@
 [Variables]
 ; Language locale code ( language-Country ) used for clock and calendar
-lLocale        = en-US
+lLocale        = pt-BR
 ; You can change the clock format by reading this: https://docs.rainmeter.net/manual/measures/time/#FormatCodes
 lClockFormat   = %a, %d %b  %I:%M
-lNowPlaying    = "now playing"
+lNowPlaying    = "Tocando agora"
 lDownloads     = "Downloads"
-lDownloadSpeed = "Download Speed"
-lDesktop        = "Desktop"
-lUnknown        = "Unknown"
-lStartMenu      = "Start Menu"
+lDownloadSpeed = "Velocidade download"
