@@ -1,11 +1,7 @@
-TODOS:
-
-Work out module position and display.
+TODOS:~~~~
 
 Change vBackground Method
 
 Make a request timer
 
 GMAIL API
-
-Radiobox check when config starts.~~~~
