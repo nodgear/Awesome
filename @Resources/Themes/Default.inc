@@ -17,7 +17,7 @@ tIconSize            = 16
 tIconMargin          = 16
 tBarPadding          = 16
 
-tIconPack            = tray
+tIconPack            = elementary
 
 ; First option defines the Y position of the hover background.
 ; Second option defines the shape of the hover background

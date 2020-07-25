@@ -1,3 +1,11 @@
-No user folder variable > starts info screen
+TODOS:
 
-info screen closes > loads bar and config
+Work out module position and display.
+
+Change vBackground Method
+
+Make a request timer
+
+GMAIL API
+
+Radiobox check when config starts.~~~~
