@@ -2,7 +2,7 @@
 
 ; [[[ Global Settings ]]]
 oDisableDebug = 1
-oTheme = fluent
+oTheme = default
 oLanguage = english
 oUserDir = %USERPROFILE%\awesome\
 oBarFixed =1
