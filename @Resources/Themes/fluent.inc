@@ -49,8 +49,7 @@ tDisableCenterClock   = 0
 ;Heres one example of a right sided clock!
 ; tClockPosX            = ([bBrightness:X]  - #tIconMargin# - [bClock:W])
 
-
-tMenuPosX             = #tIconMargin#R
+tMenuPosX             = #tBarPadding#
 tAppPosX              = #tIconMargin#R
 tClockPosX            = (#WORKAREAWIDTH#/2 - [bClock:W]/2)
 tMediaPosX            = (-(#tIconMargin#+#tIconSize#))r
@@ -58,7 +57,7 @@ tBrightnessPosX       = (-(#tIconMargin#+#tIconSize#))r
 tVolumePosX           = (-(#tIconMargin#+#tIconSize#))r
 tNetworkPosX          = (-(#tIconMargin#+#tIconSize#))r
 tNotificationPosX     = (-(#tIconMargin#+#tIconSize#))r
-tPowerPosX            = (-(#tIconMargin#+#tIconSize#))r
+tPowerPosX            = (#SCREENAREAWIDTH# - #tBarPadding# - #tIconSize#)
 
 
 ;                     = =================================================

@@ -1,10 +1,9 @@
-[bNetwork]
+[bBrightness]
 Meter            = Image
-MeterStyle       = Align#localAlign# | TrayButton
-ImageName        = #@#Images\Tray\ethernet\network.png
+MeterStyle       = TrayButton
+X                = #tBrightnessPosX#
+ImageName        = #@#Images\IconPacks\#tIconPack#\brightness\brightness.png
 ImageTint        = #vForeGround#
-Hiden            = #tHidePowerButton#
 MouseOverAction  = [!ShowMeter Hover][!SetOption Hover X "([#CURRENTSECTION#:X]-([Hover:W]/2)+(#tIconSize#/2))"][!Update]
 MouseLeaveAction = [!HideMeter Hover][!Update]
-OnUpdateAction   = 
 DynamicVariables = 1
