@@ -153,7 +153,7 @@ SendRainmeterCommand(command) {
 ;=======================================================================
 ;            Send a Window Message
 ;=======================================================================
-Send_WM_COPYDATA(ByRef StringToSend, ByRef TargetWindowClass)  
+Send_WM_COPYDATA(ByRef StringToSend, ByRef TargetWindowClass)
 {
     VarSetCapacity(CopyDataStruct, 3*A_PtrSize, 0)  ; Set up the structure's memory area.
     ; First set the structure's cbData member to the size of the string, including its zero terminator:
@@ -280,12 +280,12 @@ eventLoop()
     }
 }
 
-
 state_titlebarColors := {}
+
 showBackBar(targetWindow,instant := false)
 {
     WinGetPos(vMaxmizedX, vMaximizedY, vMaximizedW, vMaximizedH, "A")
-    CoordMode "Pixel", "Screen" 
+    CoordMode "Pixel", "Screen"
     fadeString := instant ? "" : "Fade"
     Global state_titlebarColors
 
@@ -298,7 +298,7 @@ showBackBar(targetWindow,instant := false)
 
     ; if(!state_titlebarColors[targetWindow])
     ; {
-        
+
         iterations := 0
         PixelColorHex := PixelGetColor(vMaximizedW*0.7,vMaximizedY+8)
         startCount := A_TickCount
@@ -315,6 +315,7 @@ showBackBar(targetWindow,instant := false)
     ;     TitlebarColor := state_titlebarColors[targetWindow]
     ; }
     ; SendRainmeterCommand("[!SetOption Background SolidColor `"" SplitRGBColor(TitlebarColor) "`" awesome\Modules\background]")
+
     SendRainmeterCommand("[!SetVariable vBGColor `"" SplitRGBColor(TitlebarColor) "`" awesome\Modules\processor][!Update awesome\Modules\Processor][!UpdateMeasure ProcessBackground  awesome\Modules\processor][!UpdateMeasure ProcessForeground  awesome\Modules\processor]")
     SendRainmeterCommand("[!SetVariable vBGLuminance `"" RGB2L(TitlebarColor) "`" awesome\Modules\processor][!UpdateMeasure ProcessBackground  awesome\Modules\processor][!UpdateMeasure ProcessForeground  awesome\Modules\processor]")
     SendRainmeterCommand("[!SetVariable vMaximized 1 awesome\Modules\Processor][!UpdateMeasure ProcessBackground  awesome\Modules\processor][!UpdateMeasure ProcessForeground  awesome\Modules\processor]")
@@ -329,11 +330,58 @@ hideBackBar(instant := false)
   ; SendRainmeterCommand("[!SetVariable vMaximized 0 awesome\Modules\background][!Hide" fadeString " awesome\Modules\background][!Delay 300][!Update awesome][!Redraw awesome]")
 }
 
+state_lastTitle := ""
+
+showAppName(targetWindow)
+{
+      state_winTitle := WinGetTitle("A")
+      titleArray := StrSplit(state_winTitle , "-", 1)
+
+      state_winTitle := titleArray[ObjLength(titleArray)]
+
+      replaceArray := {}
+
+      replaceArray["Program Manager"] := "Desktop"
+      replaceArray["Rainmeter"] := "Awesome"
+      replaceArray["NxDock"] := "Not Awesome Dock"
+
+      state_winTitle := replaceArray[state_winTitle] ? replaceArray[state_winTitle] : state_winTitle
+
+      toFind := state_winTitle
+      match := ".ini"
+      if ( InStr(toFind, match) )
+      {
+         state_winTitle:= "Awesome"
+      }
+
+      if (state_lastTitle != state_winTitle) {
+        SendRainmeterCommand("[!SetVariable vProcess `"" state_winTitle "`" awesome\topbar][!update awesome\topbar]")
+        state_lastTitle := state_winTitle
+      }
+}
+
+daemonWindowTitle()
+{
+
+
+  if(WinGetClass("ahk_id " targetWindow) != "RainmeterMeterWindow")
+  {
+    if(!IsWindowCloaked(targetWindow))
+    {
+      showAppName(targetWindow)
+    }
+    else
+    {
+       SendRainmeterCommand("[!SetVariable vProcess 'Windows Modern APP' awesome\topbar][!update awesome\topbar]")
+    }
+  }
+}
+
 daemonWindowMinMax()
 {
   Global state_daemonWindowMinMax
   Global desktopAppFocus
-  Global currentDesktopN 
+  Global currentDesktopN
   targetWindow := WinGetID("A")
   minMaxState := WinGetMinMax("ahk_id " targetWindow)
   boolInstant := state_daemonWindowMinMax ? False : True
@@ -350,7 +398,7 @@ daemonWindowMinMax()
       {
         desktopAppFocus[currentDesktopN] := ""
       }
-      
+
       if(state_daemonWindowMinMax != minMaxState . "_" . targetWindow)
       {
         if(minMaxState = 1 && getIsOnMonitor(targetWindow))

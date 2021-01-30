@@ -1,5 +1,5 @@
 ; This is a theme file (yes, you saw that one comming)
-; You o verride ANY setting  here, including MeterStyles and shapes
+; You override ANY setting  here, including MeterStyles and shapes
 ; But please, avoid forcing options like DekstopColors / FocusMode
 ; You can replace things like oBarOffsetX oBarOffsetY to achieve the needed results tho.
 
