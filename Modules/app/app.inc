@@ -1,5 +1,6 @@
 [bApp]
 Meter            = String
+Substitute              = "^(.*)\.(.*)$":"\1","Explorer":"#lDesktop#","Rainmeter":"Awesome"
 Text             = #vProcess#
 X                = #tAppPosX#
 MeterStyle       = TrayInfo | Menu
