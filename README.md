@@ -9,7 +9,7 @@
 > Why only linux users can have the sweet?
 
 ![Current version: 0.5](https://img.shields.io/badge/Version-0.5-yellow?style=for-the-badge) ![Dependency](https://img.shields.io/badge/Dependency-AutoHotkey-brightgreen?style=for-the-badge) ![Dependency](https://img.shields.io/badge/Dependency-ImageMagick-orange?style=for-the-badge) ![Built With: Rainmeter](https://img.shields.io/badge/Built%20With-Rainmeter-blue?style=for-the-badge)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->  <p align="center">
   <img src="https://i.imgur.com/NcmJhQI.png">
 </p>
@@ -92,13 +92,15 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/jonseppanen"><img src="https://avatars3.githubusercontent.com/u/10136068?v=4" width="100px;" alt=""/><br /><sub><b>Jon Seppanen</b></sub></a><br /><a href="#tool-jonseppanen" title="Tools">🔧</a></td>
-    <td align="center"><a href="https://github.com/khanhas"><img src="https://avatars2.githubusercontent.com/u/26436809?v=4" width="100px;" alt=""/><br /><sub><b>khanhas</b></sub></a><br /><a href="#plugin-khanhas" title="Plugin/utility libraries">🔌</a></td>
+    <td align="center"><a href="https://github.com/jonseppanen"><img src="https://avatars3.githubusercontent.com/u/10136068?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jon Seppanen</b></sub></a><br /><a href="#tool-jonseppanen" title="Tools">🔧</a></td>
+    <td align="center"><a href="https://github.com/khanhas"><img src="https://avatars2.githubusercontent.com/u/26436809?v=4?s=100" width="100px;" alt=""/><br /><sub><b>khanhas</b></sub></a><br /><a href="#plugin-khanhas" title="Plugin/utility libraries">🔌</a></td>
+    <td align="center"><a href="https://profile-summary-for-github.com/user/Bluscream"><img src="https://avatars.githubusercontent.com/u/3318223?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bluscream</b></sub></a><br /><a href="https://github.com/nodgear/Awesome/commits?author=Bluscream" title="Code">💻</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
