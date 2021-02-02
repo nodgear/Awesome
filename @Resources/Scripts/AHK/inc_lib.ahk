@@ -335,6 +335,7 @@ state_lastTitle := ""
 showAppName(targetWindow)
 {
       state_winTitle := WinGetTitle("A")
+      
       titleArray := StrSplit(state_winTitle , "-", 1)
 
       state_winTitle := titleArray[ObjLength(titleArray)]
@@ -347,23 +348,33 @@ showAppName(targetWindow)
 
       state_winTitle := replaceArray[state_winTitle] ? replaceArray[state_winTitle] : state_winTitle
 
-      toFind := state_winTitle
       match := ".ini"
-      if ( InStr(toFind, match) )
+      if (InStr(state_winTitle, "awesome_")){
+        state_winTitle:= "Awesome"
+      }
+      else if (InStr(state_winTitle, match) )
       {
-         state_winTitle:= "Awesome"
+         state_winTitle:= "Rainmeter"
       }
 
       if (state_lastTitle != state_winTitle) {
-        SendRainmeterCommand("[!SetVariable vProcess `"" state_winTitle "`" awesome\topbar][!update awesome\topbar]")
         state_lastTitle := state_winTitle
+        if (debug) {
+          state_winClass := WinGetClass(state_winTitle)
+          state_winExe := WinGetProcessName(state_winTitle)
+          if (state_winClass) {
+            state_winTitle .= " (" . state_winClass . ")"
+          }
+          if (state_winExe) {
+            state_winTitle .= " " . state_winExe
+          }
+        }
+        SendRainmeterCommand("[!SetVariable vProcess `"" state_winTitle "`" awesome\topbar][!update awesome\topbar]")
       }
 }
 
 daemonWindowTitle()
 {
-
-
   if(WinGetClass("ahk_id " targetWindow) != "RainmeterMeterWindow")
   {
     if(!IsWindowCloaked(targetWindow))

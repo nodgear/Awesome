@@ -21,6 +21,7 @@ isStartOpen := false
 OnMessage(16686, "OpenDownloads")
 OnMessage(16684, "OpenStart")
 OnMessage(16683, "OpenNotifications")
+OnMessage(74,    "OnWMCopyData")
 
 
 SetTimerAndFire("CheckForDownloadsInProgress", 2000)
@@ -29,6 +30,15 @@ SetTimerAndFire("daemonWindowTitle", 200)
 ; SetTimer("startMenuCheck", 1000)
 
 startEventLoop(200)
+
+OnWMCopyData(wParam, lParam, msg, hwnd)
+{
+    StringAddress := NumGet(lParam, 2*A_PtrSize, "Ptr")  ; Retrieves the CopyDataStruct's lpData member.
+    CopyOfData := StrGet(StringAddress)  ; Copy the string out of the structure.
+    ; Show it with ToolTip vs. MsgBox so we can return in a timely fashion:
+    ToolTip A_ScriptName "`nReceived the following string:`n" CopyOfData
+    return true  ; Returning 1 (true) is the traditional way to acknowledge this message.
+}
 
 startMenuCheck()
 {
