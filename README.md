@@ -8,7 +8,7 @@
 
 > Why only linux users can have the sweet?
 
-![Current version: 0.5](https://img.shields.io/badge/Version-0.5-yellow?style=for-the-badge) ![Dependency](https://img.shields.io/badge/Dependency-AutoHotkey-brightgreen?style=for-the-badge) ![Dependency](https://img.shields.io/badge/Dependency-ImageMagick-orange?style=for-the-badge) ![Built With: Rainmeter](https://img.shields.io/badge/Built%20With-Rainmeter-blue?style=for-the-badge)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+![Current version: 0.5](https://img.shields.io/badge/Version-0.5-yellow?style=for-the-badge) ![Dependency](https://img.shields.io/badge/Dependency-ImageMagick-orange?style=for-the-badge) ![Built With: Rainmeter](https://img.shields.io/badge/Built%20With-Rainmeter-blue?style=for-the-badge)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->  <p align="center">
   <img src="https://i.imgur.com/NcmJhQI.png">
